@@ -1,0 +1,55 @@
+/**
+ * Structural stylesheet
+ */
+
+body, .goal, .progress, .progress .completed {
+    border-radius: 1.00em;
+}
+
+body {
+    margin: 0.50em auto;
+    padding: 1.00em;
+    width: 75%;
+}
+
+
+h1 {
+    margin-right: 0.50em;
+}
+
+header h1, header p {
+    display: inline-block;
+}
+
+.goal {
+    margin: 1.50em;
+    padding: 0.25em;
+}
+
+.goal .label {
+    margin: 0;
+    padding: 0;
+}
+
+.progress, .progress .completed, .progress .value-label {
+    height: 2.00em;
+}
+
+.progress {
+    position: relative;
+}
+
+.progress .completed {
+    display: block;
+}
+
+.progress .value-label {
+    display: block;
+    position: absolute;
+    top 0; left 0;
+    width: 100%;
+}
+
+footer p {
+    display: inline-block;
+}

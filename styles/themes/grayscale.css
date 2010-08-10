@@ -1,0 +1,60 @@
+/**
+ * Grayscale theme
+ */
+
+/* Page background */
+html {
+    background: #F0EBE4;
+}
+
+/* Container background and default font */
+body {
+    background: #E2DED7;
+    font: 1.00em 'Molengo', Arial, sans-serif;
+}
+
+/* Normal text (title tagline, footer text) */
+p {
+    color: #807E7B;
+}
+
+/* Page title */
+h1 {
+    font: 2.00em normal 'Molengo';
+}
+
+/* Goal background */
+.goal {
+    background: #CECAC3;
+}
+
+/* Goal title */
+.goal .label {
+    color: white;
+    text-align: center;
+    text-shadow: #000 0px 0px 5px;
+    margin-top: -1.00em;
+    font-size: 1.50em;
+}
+
+/* Progress bar - total */
+.progress {
+    background: #A9A7A3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#A9A7A3), to(#989692));
+    border: 1px solid #555;
+}
+
+/* Progress bar - completed */
+.progress .completed {
+    background: #807E7B;
+    background: -webkit-gradient(linear, left top, left bottom, from(#807E7B), to(#706D6A));
+}
+
+/* Progress bar - label */
+.progress .value-label {
+    text-align: center;
+    font: 1.25em bold Arial, sans-serif;
+    text-shadow: #000 0px 0px 5px;
+    color: #fff;
+    padding: 0.25em 0 0 0;
+}

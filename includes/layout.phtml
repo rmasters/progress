@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title><?= $name ?> Goals</title>
+    
+    <link rel="stylesheet" type="text/css" href="/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="/styles/base.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/styles/themes/grayscale.css">
+</head>
+<body lang="en-GB">
+    <header>
+        <h1><?= $name ?> Goals</h1>
+        <p>Tracking my goals</p>
+    </header>
+    
+    <?php if (count($goals) != 0): ?>
+    <?php foreach ($goals as $goal): ?>
+    
+    <div class="goal">
+        <h2 class="label"><?= $goal["name"] ?></h2>
+        <p class="progress">
+            <span class="completed" style="width: <?= $goal["width"] ?>%;">
+                <span class="value-label"><?= $goal["value_label"] ?></span>
+            </span>
+        </p>
+    </div>
+    
+    <?php endforeach; ?>
+    <?php else: ?>
+        <p>No goals yet!</p>
+    <?php endif; ?>
+    
+    <footer>
+        <p>Get your own goal tracker - register or download.</p>
+        <p>Made by <a href="http://rossmasters.com/" title="Perosnal website of Ross Masters">Ross Masters</a>.</p>
+    </footer>
+</body>
+</html>
