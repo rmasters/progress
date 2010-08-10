@@ -6,11 +6,15 @@ shows you a list of your goals, and your progress towards completing them.
 Configuring
 -----------
 1. Using git, check the code out onto your computer:
-    $ git clone git://github.com/rmasters/progress.git
-2. Import `install.sql` into a database:
-    mysql> create database goals;
-    mysql> use goals;
-    mysql> source /path/to/install.sql
+
+    git clone git://github.com/rmasters/progress.git
+    
+2. Import `install.sql` into a database (using a mysql prompt):
+
+    create database goals;
+    use goals;
+    source /path/to/install.sql
+    
 3. Edit `index.php` to set your name, database connection settings and location
    of /includes if you decide to put it elsewhere.
 
